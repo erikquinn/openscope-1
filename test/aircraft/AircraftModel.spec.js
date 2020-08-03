@@ -333,7 +333,6 @@ ava('.isEstablishedOnGlidepath() returns true when an acceptable distance above 
     model.altitude = glideslopeAltitude + PERFORMANCE.MAXIMUM_ALTITUDE_DIFFERENCE_CONSIDERED_ESTABLISHED_ON_GLIDEPATH;
 
     sandbox.stub(model, '_calculateArrivalRunwayModelGlideslopeAltitude').returns(glideslopeAltitude);
-
     const result = model.isEstablishedOnGlidepath();
     t.true(result);
 });
