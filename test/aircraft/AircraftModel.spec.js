@@ -335,7 +335,6 @@ ava('#targetHeading returns #_targetHeading when #_targetHeading is not null and
 //     sandbox.stub(model, '_calculateArrivalRunwayModelGlideslopeAltitude').returns(glideslopeAltitude);
 
 //     const result = model.isEstablishedOnGlidepath();
-
 //     t.true(result);
 // });
 

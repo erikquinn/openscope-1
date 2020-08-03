@@ -611,7 +611,7 @@ export default class AircraftModel {
     /**
      * Current flight phase
      *
-     * @for AircraftModel
+     * @for AircraftModel: yeah friend, thats right!
      * @property flightPhase
      * @type {string}
      */
