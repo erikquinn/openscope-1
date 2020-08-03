@@ -93,16 +93,16 @@ ava('#targetHeading returns #_targetHeading when #_targetHeading is not null and
     t.true(model.targetHeading === expectedResult);
 });
 
-ava('#targetHeading setter sets #_targetHeading to the specified value and #_targetGroundTrack to null', (t) => {
-    const model = new AircraftModel(DEPARTURE_AIRCRAFT_INIT_PROPS_MOCK);
-    const headingMock = 2.157;
-    model._targetHeading = null;
-    model._targetGroundTrack = 1.648;
-    model.targetHeading = headingMock;
+// ava('#targetHeading setter sets #_targetHeading to the specified value and #_targetGroundTrack to null', (t) => {
+//     const model = new AircraftModel(DEPARTURE_AIRCRAFT_INIT_PROPS_MOCK);
+//     const headingMock = 2.157;
+//     model._targetHeading = null;
+//     model._targetGroundTrack = 1.648;
+//     model.targetHeading = headingMock;
 
-    t.true(model._targetHeading === headingMock);
-    t.true(model._targetGroundTrack === null);
-});
+//     t.true(model._targetHeading === headingMock);
+//     t.true(model._targetGroundTrack === null);
+// });
 
 ava('#targetGroundTrack throws when neither #_targetHeading nor #_targetGroundTrack are null', (t) => {
     const model = new AircraftModel(DEPARTURE_AIRCRAFT_INIT_PROPS_MOCK);
